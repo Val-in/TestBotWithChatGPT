@@ -52,8 +52,7 @@ def start(message):
 @bot.message_handler(commands=['help'])
 def show_help(message):
     bot.send_message(message.chat.id,
-                     "Я отвечу на все твои вопросы...\n"
-                     "Команды:\n/start — новый диалог\n/help — помощь")
+                     "У меня есть такие команды:\n/start — cпросить что-нибудь\n/help — получить помощь")
 
 
 @bot.message_handler(func=lambda msg: msg.text in ["Новый запрос", "Помощь"])
