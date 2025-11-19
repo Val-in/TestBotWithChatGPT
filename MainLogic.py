@@ -5,7 +5,7 @@ import os
 from openai import OpenAI
 
 
-load_dotenv()
+# load_dotenv() 
 bot_token = os.getenv("TELEGRAM_TOKEN")
 openai_key = os.getenv("OPENAI_API_KEY")
 GPT_URL = "https://api.openai.com/v1/chat/completions"
